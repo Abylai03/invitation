@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Cormorant', serif;
+}
+
+.container {
+    /* max-width: 650px; */
+    max-width: 550px;
+    margin: auto;
+    /* background: url(images/background_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+}
+
+#invitation {
+    position: relative;
+    height: 500px;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("https://oir.mobi/uploads/posts/2021-03/1616565021_58-p-fon-kazakhskii-ornament-64.jpg");
+    /* background: url("https://media.istockphoto.com/id/1172882628/vector/golden-pale-yellow-and-white-coloured-shimmery-shining-starry-look-merry-christmas-new-year.jpg?s=612x612&w=0&k=20&c=LkIH3b_ffFRH6NZh2B3bnodkO4hzB-BSENyWlv1JM-g="); */
+    /* background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(226,190,20,1) 2%, rgba(255,255,255,1) 95%); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#information {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(images/background_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#flowers {
+    /* position: absolute;
+    top: 0; */
+    width: 90%;
+    /* margin-bottom: 25%; */
+}
+
+.block-header {
+    font-family: Cormorant-700;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: #2aaf25;
+    font-weight: 600;
+    margin: 0;
+}
+
+.info-title {
+    margin-top: 0;
+}
+
+.info-text {
+    font-size: 24px;
+}
+
+.timer__items {
+    display: flex;
+    font-size: 24px;
+    font-family: 'gilroy500';
+    justify-content: center;
+    color: #202020;
+}
+
+.timer__item {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding-bottom: 15px;
+    padding-top: 6px;
+    text-align: center;
+    border: 2px solid #2aaf25;
+    border-radius: 50%;
+}
+
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 9px;
+    transform: translateX(-50%);
+    font-size: 12px;
+}
